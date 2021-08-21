@@ -1,0 +1,39 @@
+@import './variables';
+
+.inline-flex-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-orange {
+  color: $buddy-orange !important;
+}
+
+.absolute-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin disabled-control {
+  &.disabled {
+    opacity: 0.15;
+
+    * {
+      cursor: pointer;
+    }
+  }
+}

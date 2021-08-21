@@ -1,0 +1,12 @@
+.loading-container {
+  line-height: "25px";
+  margin-left: 5px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .loading-text {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+}

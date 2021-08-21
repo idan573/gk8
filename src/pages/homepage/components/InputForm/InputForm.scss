@@ -1,0 +1,29 @@
+.input-form {
+  display: grid;
+  justify-content: center;
+  & .address-card {
+    width: 500px;
+  }
+
+  & .MuiFormControl-root {
+    min-width: 400px;
+    justify-self: flex-start;
+  }
+}
+
+.card-content {
+  display: grid;
+  grid-gap: 15px;
+  justify-items: center;
+  margin: 20px;
+
+  .title {
+    color: #005a87;
+    justify-self: flex-start;
+  }
+
+  button {
+    max-width: 50px;
+    justify-self: flex-end;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.app-spinner {
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    circle {
+      color: $buddy-orange;
+    }
+  }
+
+  .app-spinner-title {
+    margin-right: 14px;
+    color: $buddy-orange;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+
+.app-card {
+  margin: 0 0 20px;
+
+  &:not(.inline-title) {
+    display: block;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.fit-content {
+    width: fit-content;
+  }
+
+  &.inline-flex {
+    .app-card-content {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .card-title * {
+    display: inline-flex;
+    font-size: 20px;
+    color: $buddy-orange;
+  }
+
+  .card-title {
+    display: flex;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 10px;
+    }
+  }
+}

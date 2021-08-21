@@ -1,0 +1,21 @@
+.app-button {
+  .app-button-icon {
+    margin-right: 10px;
+  }
+
+  .button-spinner {
+    margin-left: 10px;
+  }
+
+  &.icon-left {
+    .app-icon {
+      margin-left: 0;
+    }
+  }
+
+  &.icon-right {
+    .app-icon {
+      margin-right: 0;
+    }
+  }
+}

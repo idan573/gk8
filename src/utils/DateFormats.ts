@@ -1,0 +1,3 @@
+export const DEFAULT_TIMESTAMP_FORMAT = "DD/MM/YYYY HH:mm:ss";
+export const DEFAULT_TIMESTAMP_MS_FORMAT = "DD/MM/YYYY HH:mm:ss.SSS";
+export const DEFAULT_DATE_FORMAT = "DD/MM/YYYY";

@@ -1,0 +1,30 @@
+.tx-grid {
+  height: 400px;
+  margin: 20px;
+  display: grid;
+  justify-items: center;
+  grid-gap: 15px;
+  min-width: 1000px;
+}
+
+.input-form {
+  & .ag-root-wrapper {
+    min-width: 1000px;
+  }
+
+  & ag-root-wrapper {
+    min-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .input-form {
+    & .ag-root-wrapper {
+      min-width: 600px;
+    }
+
+    & ag-root-wrapper {
+      min-width: 600px;
+    }
+  }
+}

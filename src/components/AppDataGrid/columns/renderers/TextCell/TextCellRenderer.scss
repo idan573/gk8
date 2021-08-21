@@ -1,0 +1,9 @@
+.ag-theme-material .ag-cell {
+  align-items: center;
+  .app-cell-renderer-text {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 1px;
+  }
+}
