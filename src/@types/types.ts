@@ -1,7 +1,7 @@
 export type AppTx = {
   from: string;
   to: string;
-  value: number;
+  value: string;
   confirmations: number;
   hash: string;
 };

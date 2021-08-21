@@ -1,3 +1,4 @@
+import Web3 from "web3";
 import { AppTx } from "../@types/types";
 import { TxInfoEtherscan } from "../services/ethApi/models";
 
@@ -11,7 +12,7 @@ export const txMapper = ({
   return {
     from,
     to,
-    value,
+    value: Web3.utils.fromWei(`${value}`, "ether"),
     confirmations,
     hash,
   };

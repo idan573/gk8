@@ -1,26 +1,6 @@
-import { Keccak } from "sha3";
-
+import Web3 from "web3";
 function isChecksumAddress(address: string) {
-  debugger;
-  // Check each case
-  address = address.replace("0x", "");
-  const sha3 = new Keccak(256);
-  sha3.update(address);
-  const addressHash = sha3.digest("hex");
-  for (let i = 0; i < 40; i++) {
-    // the nth letter should be uppercase if the nth digit of casemap is 1
-    if (
-      (parseInt(addressHash[i], 16) > 7 &&
-        address[i].toUpperCase() !== address[i]) ||
-      (parseInt(addressHash[i], 16) <= 7 &&
-        address[i].toLowerCase() !== address[i])
-    ) {
-      console.log("Error: Checksum failed!!");
-
-      return false;
-    }
-  }
-  return true;
+  return Web3.utils.isAddress(address);
 }
 
 export function validateEthAddress(address: string) {
