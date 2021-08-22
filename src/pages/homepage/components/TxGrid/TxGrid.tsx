@@ -40,6 +40,7 @@ export const TxGrid: React.FC<TxGridProps> = ({ address }: TxGridProps) => {
             <AgGridColumn field="value"></AgGridColumn>
             <AgGridColumn field="confirmations"></AgGridColumn>
             <AgGridColumn field="hash"></AgGridColumn>
+            <AgGridColumn field="date"></AgGridColumn>
           </AgGridReact>
         </div>
       )}

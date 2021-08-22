@@ -8,6 +8,7 @@ export const txMapper = ({
   confirmations,
   value,
   hash,
+  timeStamp,
 }: Partial<TxInfoEtherscan>): Partial<AppTx> => {
   return {
     from,
@@ -15,5 +16,7 @@ export const txMapper = ({
     value: Web3.utils.fromWei(`${value}`, "ether"),
     confirmations,
     hash,
+    //@ts-ignore
+    date: new Date(timeStamp * 1000).toISOString(),
   };
 };
